@@ -1,2 +1,2 @@
 # ART
-Rebeccaof avalon art
+Rebecca of avalon art
