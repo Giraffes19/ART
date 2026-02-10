@@ -39,3 +39,28 @@ main {
   height: auto;
   border-radius: 6px;
 }
+
+
+/* LIGHTBOX OVERLAY */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  z-index: 1000;
+}
+
+#lightbox.active {
+  display: flex;
+}
+
+#lightbox img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+}
+
+
