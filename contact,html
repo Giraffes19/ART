@@ -14,13 +14,13 @@
 </nav>
 
 <main>
-<form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="3b7aee5e-288a-403a-bb7b-f9886880da1c">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="3b7aee5e-288a-403a-bb7b-f9886880da1c">
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
   <button type="submit">Submit</button>
-</form>
+  </form>
 </main>
 
 </body>
