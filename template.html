@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact me!</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <div id="navbar-container"></div>
+
+<script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
