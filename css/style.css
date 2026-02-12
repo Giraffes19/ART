@@ -68,8 +68,10 @@ main {
   transition: transform 0.2s ease;
 
 #lightbox figure {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
-  text-align: center;
 }
 
 #lightbox-caption {
