@@ -50,6 +50,7 @@ main {
   justify-content: center;
   cursor: zoom-out;
   z-index: 1000;
+  color: white; /* important */
 }
 
 #lightbox.active {
@@ -72,8 +73,8 @@ main {
 }
 
 #lightbox-caption {
-  margin-top: 15px;
-  color: #ccc;
-  font-size: 0.9rem;
-  letter-spacing: 0.03em;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: #ddd; /* softer than pure white */
 }
