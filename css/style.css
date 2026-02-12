@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #27f2de;
 }
 
 /* NAV BAR */
@@ -25,7 +24,6 @@ body {
 /* PAGE CONTENT */
 main {
   padding: 40px;
-  background: #27f2de;
 }
 
 /* GALLERY GRID */
@@ -41,35 +39,16 @@ main {
   border-radius: 6px;
 }
 
-
-/* LIGHTBOX OVERLAY */
-#lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.95);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  cursor: zoom-out;
-  z-index: 1000;
+#lightbox figure {
+  margin: 0;
+  text-align: center;
 }
 
-#lightbox.active {
-  display: flex;
+#lightbox-caption {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
 }
 
-#lightbox img {
-  max-width: 95vw;
-  max-height: 95vh;
-  object-fit: contain;
-}
-
-.gallery img {
-  cursor: zoom-in;
-  transition: transform 0.2s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.02);
-}
 
