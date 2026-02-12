@@ -100,3 +100,31 @@ main {
   font-size: 0.85rem;
   opacity: 0.8;
 }
+
+#lightbox .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #e8e6e3;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 20px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+#lightbox .nav:hover {
+  opacity: 1;
+}
+
+#lightbox .prev {
+  left: 30px;
+}
+
+#lightbox .next {
+  right: 30px;
+}
+
+
