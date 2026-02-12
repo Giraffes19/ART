@@ -6,7 +6,7 @@ const images = document.querySelectorAll(".gallery img");
 images.forEach(img => {
   img.addEventListener("click", () => {
     lightboxImg.src = img.src;
-    lightboxCaption.textContent = img.dataset.caption || "";
+    lightboxCaption.innerHTML = img.dataset.caption || "";
     lightbox.classList.add("active");
   });
 });
