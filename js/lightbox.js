@@ -1,10 +1,12 @@
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
+const lightboxCaption = document.getElementById("lightbox-caption");
 const images = document.querySelectorAll(".gallery img");
 
 images.forEach(img => {
   img.addEventListener("click", () => {
     lightboxImg.src = img.src;
+    lightboxCaption.textContent = img.dataset.caption || "";
     lightbox.classList.add("active");
   });
 });
