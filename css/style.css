@@ -77,6 +77,11 @@ main {
 
 #lightbox-caption {
   text-align: center;
+  line-height: 1.5;
+}
+
+#lightbox-caption span {
+  display: block;
 }
 
 #lightbox-caption .title {
@@ -85,15 +90,12 @@ main {
 }
 
 #lightbox-caption .desc {
-  display: block;
   margin-top: 8px;
   font-size: 0.9rem;
 }
 
 #lightbox-caption .note {
-  display: block;
-  margin-top: 8px;
+  margin-top: 6px; /* smaller gap */
   font-size: 0.85rem;
   opacity: 0.8;
 }
-
