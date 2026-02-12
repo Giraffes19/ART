@@ -38,3 +38,18 @@ main {
   height: auto;
   border-radius: 6px;
 }
+
+#lightbox figure {
+  margin: 0;
+  text-align: center;
+}
+
+#lightbox-caption {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+
+
