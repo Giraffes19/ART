@@ -66,6 +66,7 @@ main {
 .gallery img {
   cursor: zoom-in;
   transition: transform 0.2s ease;
+}
 
 #lightbox figure {
   display: inline-flex;
