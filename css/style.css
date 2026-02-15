@@ -39,7 +39,7 @@ body {
   background: #222;
   min-width: 180px;
   padding: 10px 0;
-  margin-top: 15px;
+  margin-top: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   z-index: 100;
@@ -168,5 +168,3 @@ H1 {
 #lightbox .next {
   right: 30px;
 }
-
-
