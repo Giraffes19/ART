@@ -65,8 +65,27 @@ body {
 main {
   padding: 40px;
 }
-H1 {
-  Align: Centre;
+
+/* HOMEPAGE SPECIFIC STYLES */
+main.homepage {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+main.homepage h1 {
+  font-size: 4rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+main.homepage h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  max-width: 800px;
 }
 
 /* GALLERY GRID */
