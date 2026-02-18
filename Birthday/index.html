@@ -1,26 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Happy Birthday Ma!</title>
-  </head>
+  <style>
+    #fireworks-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50vh;
+      pointer-events: none;
+      z-index: 9999;
+    }
+  </style>
+</head>
 <body>
 
-<div class="fireworks-container" style="background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"><canvas width="1676" height="536"></canvas></div>
-<canvas width="1676" height="536"></canvas>
+  <!-- Your page content here -->
 
+  <div id="fireworks-container"></div>
 
-  
-<script>
-import { Fireworks } from 'fireworks-js'
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+  <script>
+    const container = document.getElementById('fireworks-container');
+    const fireworks = new Fireworks.Fireworks(container, {
+      autoresize: true,
+      opacity: 0.5,
+      acceleration: 1.05,
+      friction: 0.97,
+      gravity: 1.5,
+      particles: 50,
+      traceLength: 3,
+      traceSpeed: 10,
+      explosion: 5,
+      intensity: 30,
+      flickering: 50,
+      lineStyle: 'round',
+      hue: { min: 0, max: 360 },
+      delay: { min: 30, max: 60 },
+      rocketsPoint: { min: 0, max: 100 },
+      lineWidth: {
+        explosion: { min: 1, max: 3 },
+        trace: { min: 1, max: 2 }
+      },
+      brightness: { min: 50, max: 80 },
+      decay: { min: 0.015, max: 0.03 },
+      mouse: { click: false, move: false, max: 1 }
+    });
 
-const container = document.querySelector('.container')
-const fireworks = new Fireworks(container, { /* options */ })
-fireworks.start()
-</script>
+    fireworks.start();
+  </script>
+
 </body>
 </html>
-</body>
-</html>
-
