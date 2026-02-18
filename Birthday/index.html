@@ -12,10 +12,11 @@
 
   
 <script>
-<script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/index.umd.js"></script>
-<script>
-  const fireworks = new Fireworks.Fireworks(document.body);
-  fireworks.start();
+import { Fireworks } from 'fireworks-js'
+
+const container = document.querySelector('.container')
+const fireworks = new Fireworks(container, { /* options */ })
+fireworks.start()
 </script>
 </body>
 </html>
