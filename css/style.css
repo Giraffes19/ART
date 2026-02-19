@@ -66,6 +66,41 @@ main {
   padding: 40px;
 }
 
+/* ABOUT PAGE LAYOUT */
+.about-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex-shrink: 0;
+  width: 380px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 700px) {
+  .about-layout {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 100%;
+  }
+}
+
+
+
 /* HOMEPAGE SPECIFIC STYLES */
 main.homepage {
   text-align: center;
